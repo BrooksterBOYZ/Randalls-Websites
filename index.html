@@ -53,115 +53,6 @@
             color: #ffdd57; 
         }
 
-        .hero {
-            background: url('high-quality-hero-image.jpg') no-repeat center center/cover; 
-            height: 500px;
-            display: flex;
-            flex-direction: column; /* Align items vertically */
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            color: white;
-            padding: 2rem;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
-        }
-
-        .hero h2 {
-            font-size: 3.5rem;
-            margin: 0;
-        }
-
-        .cta-button {
-            margin-top: 1rem;
-            padding: 0.8rem 1.5rem;
-            font-size: 1.2rem;
-            background: #ffdd57; 
-            color: #333;
-            text-decoration: none;
-            border-radius: 25px;
-            transition: background 0.3s ease;
-        }
-
-        .cta-button:hover {
-            background: #ffc107; 
-        }
-
-        .section {
-            padding: 3rem;
-            text-align: center;
-        }
-
-        .section h3 {
-            font-size: 2.5rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .about-content { /* Styles for the "About Us" section */
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        .profile-image { /* Styles for the profile image */
-            width: 200px; 
-            height: 200px;
-            border-radius: 50%; 
-            object-fit: cover;
-            margin-bottom: 1rem; 
-        }
-
-        .cards {
-            display: flex;
-            justify-content: center;
-            gap: 2rem;
-            flex-wrap: wrap;
-        }
-
-        .card {
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            overflow: hidden;
-            width: 350px;
-            transition: transform 0.3s ease;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-        }
-
-        .card img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-        }
-
-        .card h4 {
-            margin: 1rem;
-            font-size: 1.5rem;
-        }
-
-        .card p {
-            margin: 1rem;
-            color: #666;
-        }
-
-        .card a {
-            display: block;
-            text-align: center;
-            background: #007BFF; 
-            color: white;
-            text-decoration: none;
-            padding: 0.8rem;
-            margin: 1rem;
-            border-radius: 5px;
-            transition: background 0.3s ease;
-        }
-
-        .card a:hover {
-            background: #0056b3; 
-        }
-
         footer {
             background: #343a40;
             color: white;
@@ -183,6 +74,21 @@
         footer a:hover {
             color: #ffc107; 
         }
+
+        .cta-button {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            background: #ffdd57; 
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ffc107; 
+        }
     </style>
 </head>
 <body>
@@ -190,74 +96,17 @@
         <h1>Brooks Tafreshi Websites</h1>
         <nav>
             <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
 
     <div class="hero">
         <h2>Innovative Websites for Growing Businesses</h2>
-        <a href="#contact" class="cta-button">Get a Free Quote</a> 
+        <a href="contact.html" class="cta-button">Get a Free Quote</a> 
     </div>
-
-    <section class="section" id="about">
-        <div class="about-content">
-            <img src="brooks-tafreshi.jpg" alt="Brooks Tafreshi" class="profile-image"> 
-            <h3>About Brooks Tafreshi Websites</h3>
-            <p>Founded by Brooks Tafreshi [Year], we're passionate about crafting exceptional websites that drive business growth. With a focus on creativity, innovation, and client collaboration, we transform your online vision into reality.</p>
-            <p>We believe in a personalized approach and data-driven strategies to build long-term partnerships. Our goal is to empower your business with a stunning online presence that attracts customers and achieves your goals.</p> 
-        </div>
-    </section>
-
-    <section class="section" id="services">
-        <h3>Our Services</h3>
-        <div class="cards">
-            <div class="card">
-                <img src="web-design-image.jpg" alt="Web Design"> 
-                <h4>Custom Web Design</h4>
-                <p>Stand out with unique designs that captivate and convert your audience. We specialize in [mention specific types of web design, e.g., responsive design, e-commerce design, etc.].</p>
-                <a href="#contact">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="seo-optimization-image.jpg" alt="SEO Optimization"> 
-                <h4>SEO Optimization</h4>
-                <p>Maximize your online visibility with our expert SEO strategies, including [mention specific SEO techniques, e.g., keyword research, on-page optimization, link building].</p>
-                <a href="#contact">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="e-commerce-solutions-image.jpg" alt="E-commerce Solutions"> 
-                <h4>E-commerce Solutions</h4>
-                <p>Transform your business with secure, scalable e-commerce platforms. We can help you set up and manage your online store with ease.</p>
-                <a href="#contact">Learn More</a>
-            </div>
-            <div class="card">
-                <img src="web-hosting-image.jpg" alt="Web Hosting"> 
-                <h4>Web Hosting</h4>
-                <p>Reliable and high-performance hosting services to keep your website running smoothly. We offer a variety of hosting plans to meet your needs.</p>
-                <a href="#contact">Learn More</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="section" id="contact">
-        <h3>Contact Us</h3>
-        <p>Ready to elevate your online presence? We're here to help.</p>
-        <p>Email: contact@brookstafreshiwebsites.com | Phone: (432) 978-0903</p>
-        <form action="#" method="post"> 
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-
-            <button type="submit">Send Message</button>
-        </form>
-    </section>
 
     <footer>
         <p>&copy; 2024 Brooks Tafreshi Websites. All rights reserved.</p>
