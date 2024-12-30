@@ -1,0 +1,21 @@
+/* About section styles */
+.about-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.about-section .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.about-section .col-md-6 {
+  flex: 1;
+}
+
+.about-section img {
+  max-width: 100%;
+  border-radius: 5px;
+}
