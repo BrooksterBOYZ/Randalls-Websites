@@ -1,0 +1,21 @@
+/* Services section styles */
+.services-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.services-section .service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.services-section .card {
+  background-color: #f0f0f0;
+  padding: 2rem;
+  margin: 1rem;
+  border-radius: 5px;
+  width: 300px;
+  box-sizing: border-box;
+}
