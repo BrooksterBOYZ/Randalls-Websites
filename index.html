@@ -10,17 +10,20 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background: #f0f0f0;
+            background: #f0f0f0; 
         }
 
         header {
-            background: linear-gradient(90deg, #007BFF, #6610f2);
+            background: linear-gradient(90deg, #007BFF, #6610f2); 
             color: white;
             padding: 1.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: sticky; /* Make the header sticky */
+            top: 0;
+            z-index: 10; /* Ensure header stays on top */
         }
 
         header h1 {
@@ -47,31 +50,32 @@
         }
 
         nav ul li a:hover {
-            color: #ffdd57;
+            color: #ffdd57; 
         }
 
         .hero {
-            background: url('https://via.placeholder.com/1600x400') no-repeat center center/cover;
+            background: url('high-quality-hero-image.jpg') no-repeat center center/cover; 
             height: 500px;
             display: flex;
+            flex-direction: column; /* Align items vertically */
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
             padding: 2rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); 
         }
 
         .hero h2 {
             font-size: 3.5rem;
             margin: 0;
-            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
         }
 
         .cta-button {
             margin-top: 1rem;
             padding: 0.8rem 1.5rem;
             font-size: 1.2rem;
-            background: #ffdd57;
+            background: #ffdd57; 
             color: #333;
             text-decoration: none;
             border-radius: 25px;
@@ -79,7 +83,7 @@
         }
 
         .cta-button:hover {
-            background: #ffc107;
+            background: #ffc107; 
         }
 
         .section {
@@ -90,6 +94,20 @@
         .section h3 {
             font-size: 2.5rem;
             margin-bottom: 1.5rem;
+        }
+
+        .about-content { /* Styles for the "About Us" section */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .profile-image { /* Styles for the profile image */
+            width: 200px; 
+            height: 200px;
+            border-radius: 50%; 
+            object-fit: cover;
+            margin-bottom: 1rem; 
         }
 
         .cards {
@@ -131,7 +149,7 @@
         .card a {
             display: block;
             text-align: center;
-            background: #007BFF;
+            background: #007BFF; 
             color: white;
             text-decoration: none;
             padding: 0.8rem;
@@ -141,7 +159,7 @@
         }
 
         .card a:hover {
-            background: #0056b3;
+            background: #0056b3; 
         }
 
         footer {
@@ -157,13 +175,13 @@
         }
 
         footer a {
-            color: #ffdd57;
+            color: #ffdd57; 
             text-decoration: none;
             transition: color 0.3s ease;
         }
 
         footer a:hover {
-            color: #ffc107;
+            color: #ffc107; 
         }
     </style>
 </head>
@@ -181,39 +199,43 @@
 
     <div class="hero">
         <h2>Innovative Websites for Growing Businesses</h2>
-        <a href="#contact" class="cta-button">Get Started</a>
+        <a href="#contact" class="cta-button">Get a Free Quote</a> 
     </div>
 
     <section class="section" id="about">
-        <h3>About Us</h3>
-        <p>At Brooks Tafreshi Websites, we deliver cutting-edge web solutions tailored to your business needs. From dynamic designs to robust functionality, we help you make a lasting impact online.</p>
+        <div class="about-content">
+            <img src="brooks-tafreshi.jpg" alt="Brooks Tafreshi" class="profile-image"> 
+            <h3>About Brooks Tafreshi Websites</h3>
+            <p>Founded by Brooks Tafreshi [Year], we're passionate about crafting exceptional websites that drive business growth. With a focus on creativity, innovation, and client collaboration, we transform your online vision into reality.</p>
+            <p>We believe in a personalized approach and data-driven strategies to build long-term partnerships. Our goal is to empower your business with a stunning online presence that attracts customers and achieves your goals.</p> 
+        </div>
     </section>
 
     <section class="section" id="services">
         <h3>Our Services</h3>
         <div class="cards">
             <div class="card">
-                <img src="https://via.placeholder.com/350x200" alt="Web Design">
+                <img src="web-design-image.jpg" alt="Web Design"> 
                 <h4>Custom Web Design</h4>
-                <p>Stand out with unique designs that captivate and convert your audience.</p>
+                <p>Stand out with unique designs that captivate and convert your audience. We specialize in [mention specific types of web design, e.g., responsive design, e-commerce design, etc.].</p>
                 <a href="#contact">Learn More</a>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/350x200" alt="SEO Optimization">
+                <img src="seo-optimization-image.jpg" alt="SEO Optimization"> 
                 <h4>SEO Optimization</h4>
-                <p>Maximize your online visibility with our expert SEO strategies.</p>
+                <p>Maximize your online visibility with our expert SEO strategies, including [mention specific SEO techniques, e.g., keyword research, on-page optimization, link building].</p>
                 <a href="#contact">Learn More</a>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/350x200" alt="E-commerce Solutions">
+                <img src="e-commerce-solutions-image.jpg" alt="E-commerce Solutions"> 
                 <h4>E-commerce Solutions</h4>
-                <p>Transform your business with secure, scalable e-commerce platforms.</p>
+                <p>Transform your business with secure, scalable e-commerce platforms. We can help you set up and manage your online store with ease.</p>
                 <a href="#contact">Learn More</a>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/350x200" alt="Web Hosting">
+                <img src="web-hosting-image.jpg" alt="Web Hosting"> 
                 <h4>Web Hosting</h4>
-                <p>Reliable and high-performance hosting services to keep your website running smoothly.</p>
+                <p>Reliable and high-performance hosting services to keep your website running smoothly. We offer a variety of hosting plans to meet your needs.</p>
                 <a href="#contact">Learn More</a>
             </div>
         </div>
@@ -223,6 +245,18 @@
         <h3>Contact Us</h3>
         <p>Ready to elevate your online presence? We're here to help.</p>
         <p>Email: contact@brookstafreshiwebsites.com | Phone: (432) 978-0903</p>
+        <form action="#" method="post"> 
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
