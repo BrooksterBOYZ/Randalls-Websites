@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services - Brooks Tafreshi Websites</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/services.css">
 </head>
 <body>
     <header>
-        <h1>Brooks Tafreshi Websites</h1>
+        <h1>Our Services</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -17,16 +17,12 @@
             </ul>
         </nav>
     </header>
-    <section class="section">
-        <h3>Our Services</h3>
-        <div class="cards">
-            <!-- Cards here -->
-            <!-- Copy the cards from the original structure -->
-        </div>
-    </section>
+    <div class="services-section">
+        <!-- Copy and paste service cards here -->
+    </div>
     <footer>
         <p>&copy; 2024 Brooks Tafreshi Websites. All rights reserved.</p>
-        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 </body>
 </html>
+
