@@ -3,28 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Randall's Websites</title>
+    <title>Brooks Tafreshi Websites</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
             margin: 0;
             padding: 0;
             color: #333;
-            background: #f5f5f5;
+            background: #f0f0f0;
         }
 
         header {
-            background: linear-gradient(90deg, #4CAF50, #2E7D32);
+            background: linear-gradient(90deg, #007BFF, #6610f2);
             color: white;
-            padding: 1rem 2rem;
+            padding: 1.5rem 2rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
         header h1 {
             margin: 0;
-            font-size: 1.5rem;
+            font-size: 2rem;
         }
 
         nav ul {
@@ -41,32 +42,54 @@
         nav ul li a {
             color: white;
             text-decoration: none;
+            font-size: 1.1rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ffdd57;
         }
 
         .hero {
             background: url('https://via.placeholder.com/1600x400') no-repeat center center/cover;
-            height: 400px;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
             color: white;
-            padding: 1rem;
+            padding: 2rem;
         }
 
         .hero h2 {
-            font-size: 2.5rem;
+            font-size: 3.5rem;
             margin: 0;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .cta-button {
+            margin-top: 1rem;
+            padding: 0.8rem 1.5rem;
+            font-size: 1.2rem;
+            background: #ffdd57;
+            color: #333;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background: #ffc107;
         }
 
         .section {
-            padding: 2rem;
+            padding: 3rem;
             text-align: center;
         }
 
         .section h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .cards {
@@ -78,21 +101,26 @@
 
         .card {
             background: white;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
             overflow: hidden;
-            width: 300px;
-            text-align: left;
+            width: 350px;
+            transition: transform 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
         }
 
         .card img {
             width: 100%;
-            height: 150px;
+            height: 200px;
             object-fit: cover;
         }
 
         .card h4 {
             margin: 1rem;
+            font-size: 1.5rem;
         }
 
         .card p {
@@ -103,30 +131,45 @@
         .card a {
             display: block;
             text-align: center;
-            background: #4CAF50;
+            background: #007BFF;
             color: white;
             text-decoration: none;
-            padding: 0.5rem;
+            padding: 0.8rem;
             margin: 1rem;
-            border-radius: 4px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .card a:hover {
+            background: #0056b3;
         }
 
         footer {
-            background: #2E7D32;
+            background: #343a40;
             color: white;
             text-align: center;
-            padding: 1rem;
+            padding: 2rem;
             margin-top: 2rem;
         }
 
         footer p {
-            margin: 0;
+            margin: 0.5rem 0;
+        }
+
+        footer a {
+            color: #ffdd57;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffc107;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Randall's Websites</h1>
+        <h1>Brooks Tafreshi Websites</h1>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -137,33 +180,40 @@
     </header>
 
     <div class="hero">
-        <h2>Professional Websites for Your Business</h2>
+        <h2>Innovative Websites for Growing Businesses</h2>
+        <a href="#contact" class="cta-button">Get Started</a>
     </div>
 
     <section class="section" id="about">
         <h3>About Us</h3>
-        <p>At Randall's Websites, we specialize in crafting beautiful, functional, and modern websites for businesses of all sizes. Let us help you make an unforgettable impression online.</p>
+        <p>At Brooks Tafreshi Websites, we deliver cutting-edge web solutions tailored to your business needs. From dynamic designs to robust functionality, we help you make a lasting impact online.</p>
     </section>
 
     <section class="section" id="services">
         <h3>Our Services</h3>
         <div class="cards">
             <div class="card">
-                <img src="https://via.placeholder.com/300x150" alt="Web Design">
+                <img src="https://via.placeholder.com/350x200" alt="Web Design">
                 <h4>Custom Web Design</h4>
-                <p>We create tailor-made designs that represent your brand and captivate your audience.</p>
+                <p>Stand out with unique designs that captivate and convert your audience.</p>
                 <a href="#contact">Learn More</a>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/300x150" alt="SEO Optimization">
+                <img src="https://via.placeholder.com/350x200" alt="SEO Optimization">
                 <h4>SEO Optimization</h4>
-                <p>Boost your website's visibility and attract more traffic with our SEO services.</p>
+                <p>Maximize your online visibility with our expert SEO strategies.</p>
                 <a href="#contact">Learn More</a>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/300x150" alt="E-commerce Solutions">
+                <img src="https://via.placeholder.com/350x200" alt="E-commerce Solutions">
                 <h4>E-commerce Solutions</h4>
-                <p>Expand your business online with a secure and user-friendly e-commerce platform.</p>
+                <p>Transform your business with secure, scalable e-commerce platforms.</p>
+                <a href="#contact">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/350x200" alt="Web Hosting">
+                <h4>Web Hosting</h4>
+                <p>Reliable and high-performance hosting services to keep your website running smoothly.</p>
                 <a href="#contact">Learn More</a>
             </div>
         </div>
@@ -171,12 +221,13 @@
 
     <section class="section" id="contact">
         <h3>Contact Us</h3>
-        <p>Ready to take your online presence to the next level? Get in touch with us today!</p>
-        <p>Email: contact@randallswebsites.com | Phone: (123) 456-7890</p>
+        <p>Ready to elevate your online presence? We're here to help.</p>
+        <p>Email: contact@brookstafreshiwebsites.com | Phone: (432) 978-0903</p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Randall's Websites. All rights reserved.</p>
+        <p>&copy; 2024 Brooks Tafreshi Websites. All rights reserved.</p>
+        <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </footer>
 </body>
 </html>
